@@ -1,5 +1,5 @@
 body {
-    font-family: "Arial", serif;
+    font-family: "Times New Roman", serif;
     background-color: rgb(5, 0, 20);
     color: #f4f4f4;
     margin: 0;
@@ -11,10 +11,35 @@ section {
     text-align: left;
     position: relative;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    color: #050505;  /* Set default text color to white */
+    color: #050505;
 }
 
-/* Custom backgrounds for sections */
+section p {
+    background: linear-gradient(45deg, #6e6e6e, #a1a1a1, #7a7a7a); /* Concrete-like gradient */
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+    color: transparent; /* Makes text take on the gradient */
+    font-weight: bold; /* Makes text bold */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.5); /* Adds shadow to text */
+    transition: background-position 0.5s ease-out;
+}
+
+section p:hover {
+    background-position: 0 100%; /* Moves the gradient effect on hover */
+}
+
+/* Applying a custom font similar to Jujutsu Kaisen's bold, sharp lettering */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+section h1, section p {
+    font-family: 'Anton', sans-serif; /* Bold, angular font similar to anime typography */
+    text-transform: uppercase; /* Uppercase text to give it more presence */
+}
+
 #profile {
     background-image: url('https://images.squarespace-cdn.com/content/v1/522614d5e4b02f25c1dfd53c/a7b39e98-0540-441f-9a2b-a1bae8f48d4f/mahoraga-appreciation-post-lived-upto-his-hype-v0-zdn8rvhwwkmb1.jpg');
     background-size: cover;
@@ -29,16 +54,14 @@ section {
     color: white;
 }
 
-/* Custom background for the projects section */
 #projects {
-    background-image: url('images/Chainsawman.png');  /* Corrected the path */
+    background-image: url('images/Chainsawman.png');
     background-size: cover;
     background-position: center;
     color: white;
     padding: 40px 20px;
 }
 
-/* Heading Styles */
 h1 {
     margin: 0;
     font-size: 2rem;
@@ -62,7 +85,6 @@ h1:hover::after {
     width: 100%;
 }
 
-/* Section Title GIFs */
 .section-title-gif, .spongebob-gif {
     display: none;
     position: absolute;
@@ -77,7 +99,6 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
     display: block;
 }
 
-/* Profile Section Styles */
 #profile {
     display: flex;
     align-items: center;
@@ -95,7 +116,6 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
     margin-right: 20px;
 }
 
-/* Container for Projects */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +142,6 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
     align-items: center;
 }
 
-/* Hover Effect for Project Images */
 .project img {
     width: 100%;
     height: 100%;
@@ -198,7 +217,6 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
     background-color: #005bb5;
 }
 
-/* Profile Image Border Hover */
 .highlighted-profile {
     border: 5px solid darkred;
     border-radius: 50%;
@@ -210,7 +228,6 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
     transform: scale(1.05);
 }
 
-/* Section Title GIFs */
 .section-title-gif, .section-title-gif {
     display: none;
     position: absolute;
