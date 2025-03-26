@@ -1,5 +1,6 @@
 body {
-    font-family: "Times New Roman", serif;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
     background-color: rgb(5, 0, 20);
     color: #f4f4f4;
     margin: 0;
@@ -15,57 +16,59 @@ section {
 }
 
 section p {
-    background: linear-gradient(45deg, #6e6e6e, #a1a1a1, #7a7a7a); /* Concrete-like gradient */
+    background: linear-gradient(45deg, #ffd900, #01034b, #ff0000);
     background-size: 200% 200%;
     background-position: 100% 0;
-    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Makes text take on the gradient */
-    font-weight: bold; /* Makes text bold */
+    color: transparent;
+    font-weight: bold;
     font-size: 1.1rem;
     line-height: 1.5;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.5); /* Adds shadow to text */
+    text-shadow: 2px 2px 5px rgba(77, 74, 74, 0.6), 0 0 25px rgba(255, 0, 0, 0.5);
     transition: background-position 0.5s ease-out;
 }
 
 section p:hover {
-    background-position: 0 100%; /* Moves the gradient effect on hover */
-}
-
-/* Applying a custom font similar to Jujutsu Kaisen's bold, sharp lettering */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-section h1, section p {
-    font-family: 'Anton', sans-serif; /* Bold, angular font similar to anime typography */
-    text-transform: uppercase; /* Uppercase text to give it more presence */
+    background-position: 0 100%;
 }
 
 #profile {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/522614d5e4b02f25c1dfd53c/a7b39e98-0540-441f-9a2b-a1bae8f48d4f/mahoraga-appreciation-post-lived-upto-his-hype-v0-zdn8rvhwwkmb1.jpg');
+    background-image: url('images/Clash.png');
     background-size: cover;
     background-position: center;
     color: white;
 }
 
 #about {
-    background-image: url('images/ghoul.png');
+    background-image: url('https://pbs.twimg.com/media/FvEIp-GWYAM21BG.jpg:large');
     background-size: cover;
     background-position: center;
     color: white;
 }
 
 #projects {
-    background-image: url('images/Chainsawman.png');
+    background-image: url('images/Eto2.png');
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 40px 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
 }
 
 h1 {
     margin: 0;
     font-size: 2rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #ffffff, #686060, #000000);
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgb(26, 26, 26), 0 0 25px rgb(153, 7, 7);
+    transition: background-position 0.5s ease-out;
     position: relative;
     display: inline-block;
 }
@@ -89,7 +92,7 @@ h1:hover::after {
     display: none;
     position: absolute;
     top: 0;
-    left: 13.5%;
+    left: 15%;
     margin-left: 10px;
     width: 70px;
     height: auto;
@@ -231,8 +234,8 @@ section:hover .section-title-gif, #projects:hover .spongebob-gif {
 .section-title-gif, .section-title-gif {
     display: none;
     position: absolute;
-    top: 0;
-    left: 13.5%;
+    top: 0%;
+    left: 15%;
     margin-left: 10px;
     width: 70px;
     height: auto;
